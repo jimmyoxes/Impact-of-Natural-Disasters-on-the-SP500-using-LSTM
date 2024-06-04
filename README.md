@@ -42,7 +42,7 @@ Natural Disaster Types
 •	Categories: Wildfire, Landslide, Extreme Temperature, Earthquake, Flood, Storm, etc.
 
 
-# Data Normalization
+## Data Normalization
 Natural Disasters Data
 •	Categorical data (disaster types) converted to boolean columns.
 •	Normalization applied using MinMaxScaler with a range of 0 to 1.
@@ -51,7 +51,7 @@ Stock Data
 •	Features are not normalized except the label (Close column), which is normalized.
 
 
-Model Training
+## Model Training
 Train-Validation-Test Split
 •	The dataset is split into training, validation, and test sets.
 •	Features and labels are separated accordingly.
@@ -96,7 +96,7 @@ Use the validation and test sets to evaluate the model's performance.
 
 
 
-# Conclusion
+## Conclusion
 
 This project provides insights into the correlation between natural disasters and stock market performance, specifically focusing on the S&P 500 index. The use of LSTM networks allows for time-series prediction, aiding in understanding and potentially forecasting the impact of natural disasters on stock prices.
 
