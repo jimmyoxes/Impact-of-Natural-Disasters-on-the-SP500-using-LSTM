@@ -56,17 +56,19 @@ Train-Validation-Test Split
 •	The dataset is split into training, validation, and test sets.
 •	Features and labels are separated accordingly.
 
-# Model Architecture
+## Model Architecture
 
 Imports: The necessary components from TensorFlow Keras are imported. Sequential is a linear stack of layers, LSTM is a type of recurrent neural network (RNN) layer suited for sequence prediction, Dropout is a regularization layer to prevent overfitting, and Dense is a fully connected layer.
 
-### Sequential Model: An instance of the Sequential model is created, which allows layers to be added one after another.
+### Sequential Model:
+An instance of the Sequential model is created, which allows layers to be added one after another.
 
 •  LSTM Layer 1: The first layer is an LSTM (Long Short-Term Memory) layer with 64 units. return_sequences=True means this layer returns the full sequence of outputs for each input sequence, which is required when stacking LSTM layers.
 
 •  Input Shape: input_shape=(1, X_train.shape[1]) specifies the shape of the input data. Here, the input has a sequence length of 1 and a number of features equal to X_train.shape[1]
 
-### Dropout Layer: A Dropout layer with a rate of 0.1 is added. This means 10% of the neurons will be randomly set to zero during training to prevent overfitting.
+### Dropout Layer:
+A Dropout layer with a rate of 0.1 is added. This means 10% of the neurons will be randomly set to zero during training to prevent overfitting.
 
 LSTM Layer 2: A second LSTM layer with 64 units is added. Since return_sequences is not specified, it defaults to False, meaning this layer returns only the last output of the input sequence.
 
