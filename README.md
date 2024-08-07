@@ -92,17 +92,13 @@ python
 git clone <repository-url>
 cd <repository-directory>
 2.Install Dependencies:
-
-pip install -r requirements.txt
 3.Run Preprocessing:
 Execute the script to preprocess and merge datasets.
-
 4.Train the Model:
 Run the training script to train the LSTM model.
-
 5.Evaluate the Model:
 Use the validation and test sets to evaluate the model's performance.
-•	Implemented to prevent overfitting during training.
+•Implemented to prevent overfitting during training.
 
 
 
