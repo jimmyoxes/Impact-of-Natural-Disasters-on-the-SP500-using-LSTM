@@ -4,12 +4,15 @@ This repository contains a comprehensive project that analyzes the impact of nat
 
 ## Datasets
 3 datasets are merged together
+
 First is S&P 500 Dataset
 	Description: Contains data on 496 companies from the S&P 500 index.
   Columns: 45 columns including disaster type, disaster group, Origin, etc.
 	Date Range: 2010 to 2020.
+
  Second The dataset  of how each stock represented by the symbol did on the market. 7 Columns include
  High, Low, Volume; merged with the date with the first dataset.
+ 
  Third dataset is made of 16 columns which consist of  the stock market price, weight, sector of the company, indusrty etc. It is then merged woth the 2 datasets via the column symbol.
  
  
