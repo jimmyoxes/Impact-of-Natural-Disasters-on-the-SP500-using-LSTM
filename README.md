@@ -3,10 +3,15 @@
 This repository contains a comprehensive project that analyzes the impact of natural disasters on the S&P 500 stock market between 2010 and 2020. The project involves data merging, preprocessing, normalization, and the development of a predictive model using LSTM networks.
 
 ## Datasets
-S&P 500 Dataset
+3 datasets are merged together
+First is S&P 500 Dataset
 	Description: Contains data on 496 companies from the S&P 500 index.
-  Columns: 45 columns including stock prices, volume, sector information, etc.
+  Columns: 45 columns including disaster type, disaster group, Origin, etc.
 	Date Range: 2010 to 2020.
+ Second The dataset  of how each stock represented by the symbol did on the market. 7 Columns include
+ High, Low, Volume; merged with the date with the first dataset.
+ Third dataset is made of 16 columns which consist of  the stock market price, weight, sector of the company, indusrty etc. It is then merged woth the 2 datasets via the column symbol.
+ 
  
 ### Natural Disasters Dataset
   Description: Contains data on various natural disasters globally.
@@ -55,6 +60,8 @@ Stock Data
 Train-Validation-Test Split
 •	The dataset is split into training, validation, and test sets.
 •	Features and labels are separated accordingly.
+.       Label selected is Close, and the features selected were natural disaster types and the stock features excluding Close.
+
 
 ## Model Architecture
 
